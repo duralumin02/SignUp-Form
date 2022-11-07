@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up for master</title>
+    <link
+      rel="icon"
+      href="./intro-component-with-signup-form-master/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid main-container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="row col-12 col-lg-9 inner-container">
+        <div class="col align-items-center d-flex">
+          <div class="row col-12 col-lg-11">
+            <p class="display-6 fw-bolder text-white">
+              Learn to code by watching others
+            </p>
+            <p class="text-white">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary w-100 shadow">
+            Try it free 7 days then $20/mo. thereafter
+          </button>
+
+          <div class="bg-white shadow-sm mt-4">
+            <form class="needs-validation p-4" novalidate>
+              <div>
+                <input
+                  type="text"
+                  class="form-control ps-lg-4 mt-lg-3"
+                  id="validationCustom01"
+                  placeholder="First Name"
+                  required
+                />
+                <div class="invalid-feedback text-lg-end">
+                  First Name cannot be empty!
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  class="form-control ps-lg-4 mt-lg-3"
+                  id="validationCustom02"
+                  placeholder="Last Name"
+                  required
+                />
+                <div class="invalid-feedback text-lg-end">
+                  Last Name cannot be empty!
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="email"
+                  class="form-control ps-lg-4 mt-lg-3"
+                  id="validationCustom03"
+                  placeholder="Email Address"
+                  required
+                />
+                <div class="invalid-feedback text-lg-end">
+                  Looks like this is not an email
+                </div>
+              </div>
+
+              <div>
+                <input
+                  type="password"
+                  class="form-control ps-lg-4 mt-lg-3"
+                  id="validationCustom04"
+                  placeholder="Password"
+                  required
+                />
+                <div class="invalid-feedback text-lg-end">
+                  Password cannot be empty!
+                </div>
+              </div>
+
+              <button
+                class="btn btn-success text-uppercase text-white w-100 mb-3 shadow-sm mt-lg-3"
+                type="submit"
+              >
+                Claim your free trial
+              </button>
+
+              <p class="d-lg-block small text-center text-black-50">
+                By clicking the button, you are agreeing to our
+                <span class="text-danger fw-bold">Terms and Services</span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+$font-family-sans-serif: "Poppins", sans-serif;
+$danger: hsl(0, 100%, 74%);
+$success: hsl(154, 59%, 51%);
+$primary: hsl(248, 32%, 49%);
+$dark: hsl(249, 10%, 26%);
+$white-50: hsl(246, 25%, 77%);
+
+$btn-padding-y: 12px;
+$btn-border-radius: 0.75rem;
+$input-focus-box-shadow: $dark;
+$input-padding-y: 10px;
+
+$small-font-size: 12px;
+
+$form-feedback-margin-top: 0px;
+.main-container {
+  background-image: url("../intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+  background-color: $danger;
+  mix-blend-mode: multiply;
+}
+
+.inner-container {
+  height: 550px;
+}
+
+button[type="submit"] {
+  padding: 0.55rem;
+  border-radius: 0.45rem;
+}
+
+input {
+  font-size: 2px;
+}
+input:focus {
+  border-width: 2px;
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
